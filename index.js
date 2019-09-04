@@ -118,4 +118,5 @@ const puppeteer = require('puppeteer');
         .write(grouped, { headers: true })
         .pipe(ws);
 
+    await browser.close();
 })();
